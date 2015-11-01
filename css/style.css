@@ -1,6 +1,11 @@
 <style>
+    body {
+        color: #5a5a5a;
+        font-size: 18px !important;
+    }
     .section1{
         height: auto;
+        padding: 50px;
     }
     .desktopHeader{
         margin: 20px 0 30px;
@@ -18,6 +23,10 @@
         color: #e03031;
         margin: 0;
     }
+    .blueHead{
+        color: #05a6cc;
+        margin: 0;
+    }
     .subs{
         margin:0;
     }
@@ -25,12 +34,15 @@
         background-color: #e3e3e2;
         color: #5a5a5a;
         height: 50px;
-        float: left;
         padding: 5px;
     }
     .item > img{
         width: 15%;
     }
+    .clear{
+        clear: both;
+    }
+
 
     .section2{
         background-color: #f5f2ea;
@@ -38,5 +50,49 @@
         height: auto;
         padding: 50px
     }
+    .step{
+        height:auto;
+        margin-bottom: 50px;
+    }
+    .stepPictures > img{
+        width: 85%;
+        padding: 5px;
+        background-color: white;
+        box-shadow: 0 0 5px #ccc;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .step p{
+        margin: 20px 0;
+    }
+    #thumb1{
+        background-image: url(../images/thumb1.jpg);
+        width: 170px;
+        height: 86px;
+    }
 
+
+    .section3{
+        height: auto;
+        padding: 50px;
+    }
+    div.content-one {
+        display:none;
+    }
+    .question{
+        background-color: #eeeeee;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .content-one{
+        padding-top: 5px;
+    }
+
+
+    .section4 {
+        background-color: #f5f2ea;
+        height: auto;
+        padding: 50px
+    }
 </style>
