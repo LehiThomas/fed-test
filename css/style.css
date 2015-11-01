@@ -1,0 +1,42 @@
+<style>
+    .section1{
+        height: auto;
+    }
+    .desktopHeader{
+        margin: 20px 0 30px;
+        background-image: url(../images/hero1-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%, auto;
+        height: 300px;
+    }
+    .overlay{
+        color:white;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    .redHead{
+        color: #e03031;
+        margin: 0;
+    }
+    .subs{
+        margin:0;
+    }
+    .item{
+        background-color: #e3e3e2;
+        color: #5a5a5a;
+        height: 50px;
+        float: left;
+        padding: 5px;
+    }
+    .item > img{
+        width: 15%;
+    }
+
+    .section2{
+        background-color: #f5f2ea;
+        margin-top: 50px;
+        height: auto;
+        padding: 50px
+    }
+
+</style>
