@@ -17,8 +17,8 @@
             <h3 class="subs">A sub-title that will encourage action by a user</h3>
 
             <div class="desktopHeader col-md-12">
-                <div class="overlay col-md-5">
-                    <h2>Let The Youth Lead</h2>
+                <div class="overlay col-sm-7 hidden-xs">
+                    <h2 class="serif">Let The Youth Lead</h2>
                     <p>
                         Watch Youth in Kansas City get started
                         <br /> with on their activities
@@ -28,21 +28,34 @@
                     </a>
                 </div>
             </div>
-            <div class="item col-sm-3">
-                <img src="icons/fanchart.svg" alt="fanchart icon" />
-                <span>Pick a Seat Near Stage</span>
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="margin-bottom:30px;">
+                <h2 class="serif" style="margin:0;">Let The Youth Lead</h2>
+                <p>
+                    Watch Youth in Kansas City get started with on their activities
+                </p>
+                <a href="#">
+                    <button type="button" class="btn btn-info">View Short Video</button>
+                </a>
             </div>
-            <div class="item col-sm-3">
-                <img src="icons/trees.svg" alt="tree icon" />
-                <span>Enjoy Nature</span>
+            <div class="item">
+                <img class="icon" src="icons/fanchart.svg" alt="fanchart icon" />
+                <div>Pick a Seat Near Stage</div>
+                <img class="littleArrow" src="icons/arrow.svg" alt="arrow icon" />
             </div>
-            <div class="item col-sm-3">
-                <img src="icons/camera.svg" alt="camera icon" />
-                <span>Share Photos and Stories</span>
+            <div class="item">
+                <img class="icon" src="icons/trees.svg" alt="tree icon" />
+                <div>Enjoy Nature</div>
+                <img class="littleArrow" src="icons/arrow.svg" alt="arrow icon" />
             </div>
-            <div class="item col-sm-3">
-                <img src="icons/temple.svg" alt="templa icon" />
-                <span>Find a Temple near you</span>
+            <div class="item">
+                <img class="icon" src="icons/camera.svg" alt="camera icon" />
+                <div>Share Photos and Stories</div>
+                <img class="littleArrow" src="icons/arrow.svg" alt="arrow icon" />
+            </div>
+            <div class="item" style="margin-right:0;">
+                <img class="icon" src="icons/temple.svg" alt="temple icon" />
+                <div>Find a Temple near you</div>
+                <img class="littleArrow" src="icons/arrow.svg" alt="arrow icon" />
             </div>
         </div>
         <div class="clear"></div>
@@ -54,9 +67,8 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat?
                     </p>
-                    <div id="thumb1">
-                        f
-                        <img style="width:50px" src="icons/play.svg" alt="play icon">
+                    <div id="thumb1" class="thumb">
+                        <img style="width:50px;" src="icons/play.svg" alt="play icon">
                     </div>
                     <a href="#">
                         <button type="button" class="btn btn-info">Share Photos and Stories</button>
@@ -77,7 +89,9 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat?
                     </p>
-                    <img src="images/thumb2.jpg" alt="grandparent with grandchild">
+                    <div id="thumb2" class="thumb">
+                        <img style="width:50px;" src="icons/play.svg" alt="play icon">
+                    </div>
                     <a href="#">
                         <button type="button" class="btn btn-info">View your experiences</button>
                     </a>
@@ -90,7 +104,9 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nemo unde magnam explicabo eum corporis quod laudantium placeat qui accusantium fugiat voluptate. Expedita voluptates blanditiis sunt quidem dignissimos officiis repellat?
                     </p>
-                    <img src="images/thumb3.jpg" alt="Family outdoors">
+                    <div id="thumb3" class="thumb">
+                        <img style="width:50px;" src="icons/play.svg" alt="play icon">
+                    </div>
                     <a href="#">
                         <button type="button" class="btn btn-info">Walk with yor family</button>
                     </a>
@@ -106,21 +122,23 @@
                 <h1 class="redHead" style="margin-bottom:10px">Frequently Asked Questions</h1>
                 <div class="sitesection">
                     <div class="question">
-                        <div class="expand-one toggler" id="toggler-slideOne">
+                        <div class="expand-one toggler" id="toggler-slideOne" onclick="show('slideOne')">
                             <a href="#/">
                                 <h3 class="blueHead">Why is the sky blue?</h3>
+                                <img class="bigArrow" src="icons/arrow.svg" alt="arrow icon" />
                             </a>
                         </div>
-                        <div class="content-one slider" id="slideOne">
+                        <div class="content-one slider" id="slideOne" >
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus.
                                 Fugit officia.
                             </p>
                         </div>
                     </div>
                     <div class="question">
-                        <div class="expand-one toggler" id="toggler-slideTwo">
+                        <div class="expand-one toggler" id="toggler-slideTwo" onclick="show('slideTwo')">
                             <a href="#/">
                                 <h3 class="blueHead">Why is snow white?</h3>
+                                <img class="bigArrow" src="icons/arrow.svg" alt="arrow icon" />
                             </a>
                         </div>
                         <div class="content-one slider" id="slideTwo">
@@ -130,9 +148,10 @@
                         </div>
                     </div>
                     <div class="question">
-                        <div class="expand-one toggler" id="toggler-slideThree">
+                        <div class="expand-one toggler" id="toggler-slideThree" onclick="show('slideThree')">
                             <a href="#/">
-                                <h3 class="blueHead">How much wood could a wood chuck chuck if a owod chuck could chuck wood?</h3>
+                                <h3 class="blueHead">How much wood could a wood chuck chuck if a wood chuck could chuck wood?</h3>
+                                <img class="bigArrow" src="icons/arrow.svg" alt="arrow icon" />
                             </a>
                         </div>
                         <div class="content-one slider" id="slideThree">
@@ -142,9 +161,10 @@
                         </div>
                     </div>
                     <div class="question">
-                        <div class="expand-one toggler" id="toggler-slideFour">
+                        <div class="expand-one toggler" id="toggler-slideFour" onclick="show('slideFour')">
                             <a href="#/">
                                 <h3 class="blueHead">What color is an orange?</h3>
+                                <img class="bigArrow" src="icons/arrow.svg" alt="arrow icon" />
                             </a>
                         </div>
                         <div class="content-one slider" id="slideFour">
@@ -156,35 +176,26 @@
                 </div>
             </div>
         </div>
-
         <div class="section4 col-xs-12">
-            <h1 class="redHead" style="margin-bottom:10px">Additional Resources</h1>
-            <p>Additional resource 1</p>
-            <p>Additional resource 2</p>
-            <p>Additional resource 3</p>
-            <p>Additional resource 4</p>
-            <p>Additional resource 5</p>
-            <p>Additional resource 6</p>
-
+            <div class="col-sm-6">
+                <h1 class="redHead" style="margin-bottom:10px">Additional Resources</h1>
+                <p><a href="#">Additional resource 1</a></p>
+                <p><a href="#">Additional resource 2</a></p>
+                <p><a href="#">Additional resource 3</a></p>
+                <p><a href="#">Additional resource 4</a></p>
+                <p><a href="#">Additional resource 5</a></p>
+                <p><a href="#">Additional resource 6</a></p>
+            </div>
+            <div class="col-sm-6 stepPictures">
+                <img src="images/family-line.jpg" alt="Family outdoors" />
+            </div>
         </div>
     </div>
     <script type="text/javascript">
-        function toggleSlides() {
-            $('.toggler').click(function(e) {
-                var id = $(this).attr('id');
-                var widgetId = id.substring(id.indexOf('-') + 1, id.length);
-                $('#' + widgetId).slideToggle();
-                $(this).toggleClass('sliderExpanded');
-                $('.closeSlider').click(function() {
-                    $(this).parent().hide('slow');
-                    var relatedToggler = 'toggler-' + $(this).parent().attr('id');
-                    $('#' + relatedToggler).removeClass('sliderExpanded');
-                });
-            });
-        };
-        $(function() {
-            toggleSlides();
-        });
+    function show(elem) {
+        $('.slider').hide();
+        $('#' + elem).show();
+    }
     </script>
 </body>
 

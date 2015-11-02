@@ -1,8 +1,20 @@
 <style>
-    body {
-        color: #5a5a5a;
-        font-size: 18px !important;
+    a {
+        color: #05a6cc;
     }
+    body {
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        color: #5a5a5a;
+    }
+    .sans{
+        font-family: Helvetica, sans-serif;
+    }
+    .serif{
+        font-family: Georgia, serif;
+    }
+
+
     .section1{
         height: auto;
         padding: 50px;
@@ -22,25 +34,53 @@
     .redHead{
         color: #e03031;
         margin: 0;
+        font-family: Georgia, serif;
     }
     .blueHead{
         color: #05a6cc;
         margin: 0;
+        font-family: Helvetica, sans-serif;
+        display: inline;
     }
     .subs{
         margin:0;
+        font-family: Helvetica, sans-serif;
     }
     .item{
         background-color: #e3e3e2;
         color: #5a5a5a;
         height: 50px;
-        padding: 5px;
+        width: 24%;
+        margin-right: 10px;
+        float:left;
     }
-    .item > img{
-        width: 15%;
+    .icon{
+        width: 20%;
+        float: left;
+        margin: 0 10px;
+        display: inline-block;
+    }
+    .item div{
+        display: inline-block;
+        font-size: 16px;
+        width: 60%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .littleArrow{
+        float: right;
+        width: 15px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .clear{
         clear: both;
+    }
+    .btn-info{
+        background-color: #1885a6;
+        border-color: #24b7f3;
     }
 
 
@@ -57,6 +97,7 @@
     .stepPictures > img{
         width: 85%;
         padding: 5px;
+        margin-bottom: 30px;
         background-color: white;
         box-shadow: 0 0 5px #ccc;
         display: block;
@@ -66,8 +107,29 @@
     .step p{
         margin: 20px 0;
     }
+    .thumb{
+        display: inline-block;
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .thumb img{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     #thumb1{
         background-image: url(../images/thumb1.jpg);
+        width: 170px;
+        height: 86px;
+    }
+    #thumb2{
+        background-image: url(../images/thumb2.jpg);
+        width: 170px;
+        height: 86px;
+    }
+    #thumb3{
+        background-image: url(../images/thumb3.jpg);
         width: 170px;
         height: 86px;
     }
@@ -88,6 +150,16 @@
     .content-one{
         padding-top: 5px;
     }
+    .bigArrow{
+        float: right;
+        width: 30px;
+    }
+    .rotate {
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
 
 
     .section4 {
@@ -95,4 +167,75 @@
         height: auto;
         padding: 50px
     }
+
+
+
+
+    @media (min-width: 600px) and (max-width: 992px) {
+    .overlay{
+        color:white;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    .item{
+        background-color: #e3e3e2;
+        color: #5a5a5a;
+        height: 50px;
+        width: 45%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        float:left;
+    }
+    .icon{
+        width: 18%;
+        float: left;
+        margin: 0 10px;
+        display: inline-block;
+    }
+    .item div{
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 10px;
+        width: 110px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+@media (max-width: 600px) {
+    .overlay{
+        color:white;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    .item{
+        background-color: #e3e3e2;
+        color: #5a5a5a;
+        height: 70px;
+        width: 90%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        float:left;
+    }
+    .icon{
+        width: 18%;
+        float: left;
+        margin: 0 10px;
+        display: inline-block;
+    }
+    .item div{
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 10px;
+        width: 50%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+}
+
 </style>
