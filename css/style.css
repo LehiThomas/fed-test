@@ -24,12 +24,12 @@
         background-image: url(../images/hero1-desktop.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%, auto;
-        height: 300px;
+        height: 350px;
     }
     .overlay{
         color:white;
         margin-left: 70px;
-        margin-top: 50px;
+        margin-top: 70px;
     }
     .redHead{
         color: #e03031;
@@ -39,8 +39,9 @@
     .blueHead{
         color: #05a6cc;
         margin: 0;
+        width: 90%;
         font-family: Helvetica, sans-serif;
-        display: inline;
+        display: inline-block;
     }
     .subs{
         margin:0;
@@ -95,7 +96,7 @@
         margin-bottom: 50px;
     }
     .stepPictures > img{
-        width: 85%;
+        width: 90%;
         padding: 5px;
         margin-bottom: 30px;
         background-color: white;
@@ -103,6 +104,14 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    .leftPicture{
+        margin-left:0;
+        padding: 15px;
+        -moz-transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
     }
     .step p{
         margin: 20px 0;
@@ -159,6 +168,12 @@
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         -o-transform: rotate(90deg);
+    }
+    .panel-default>.panel-heading{
+        background-color: #eeeeee;
+    }
+    .panel-body{
+        background-color: #eeeeee;
     }
 
 

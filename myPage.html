@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
 </head>
 <html>
 
@@ -61,7 +62,7 @@
         <div class="clear"></div>
         <div class="section2 col-xs-12">
             <div class="step row">
-                <div class="col-sm-6">
+                <div class="col-md-6 col-sm-12">
                     <h5 class="subs">STEP 1</h5>
                     <h2 class="redHead">The best step you can take</h2>
                     <p>
@@ -75,15 +76,15 @@
                     </a>
 
                 </div>
-                <div class="col-sm-6 stepPictures">
+                <div class="col-md-6 col-sm-12 stepPictures">
                     <img src="images/family-book.jpg" alt="Family reading a book" />
                 </div>
             </div>
             <div class="step row">
-                <div class="col-sm-6 stepPictures">
-                    <img style="margin-left:0;" src="images/rotated.jpg" alt="Mother and Daughter on computer" />
+                <div class="col-md-6 hidden-xs hidden-sm stepPictures">
+                    <img class="leftPicture" src="images/rotated.jpg" alt="Mother and Daughter on computer" />
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6 col-sm-12">
                     <h5 class="subs">STEP 2</h5>
                     <h2 class="redHead">Getting higher on the steps</h2>
                     <p>
@@ -96,9 +97,12 @@
                         <button type="button" class="btn btn-info">View your experiences</button>
                     </a>
                 </div>
+                <div class="hidden-md hidden-lg col-sm-12 stepPictures">
+                    <img style="margin-left:0;" src="images/rotated.jpg" alt="Mother and Daughter on computer" />
+                </div>
             </div>
             <div class="step row">
-                <div class="col-sm-6">
+                <div class="col-md-6 col-sm-12">
                     <h5 class="subs">STEP 3</h5>
                     <h2 class="redHead">No more steps left, you are there</h2>
                     <p>
@@ -112,7 +116,7 @@
                     </a>
 
                 </div>
-                <div class="col-sm-6 stepPictures">
+                <div class="col-md-6 col-sm-12 stepPictures">
                     <img src="images/family-temple.jpg" alt="Family at the temple" />
                 </div>
             </div>
@@ -128,7 +132,7 @@
                                 <img class="bigArrow" src="icons/arrow.svg" alt="arrow icon" />
                             </a>
                         </div>
-                        <div class="content-one slider" id="slideOne" >
+                        <div class="content-one slider" id="slideOne">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus.
                                 Fugit officia.
                             </p>
@@ -175,6 +179,70 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="row">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title blueHead">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Why is the sky blue?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus.
+                                    Fugit officia.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title blueHead">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Why is snow white?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus.
+                                    Fugit officia.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title blueHead">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  How much wood could a wood chuck chuck if a wood chuck could chuck wood?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus.
+                                    Fugit officia.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title blueHead">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  What color is an orange?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur numquam ducimus voluptatem sequi exercitationem nesciunt atque possimus laboriosam non laudantium! Nisi illo similique impedit libero vitae maiores accusamus.
+                                    Fugit officia.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <div class="section4 col-xs-12">
             <div class="col-sm-6">
@@ -192,10 +260,10 @@
         </div>
     </div>
     <script type="text/javascript">
-    function show(elem) {
-        $('.slider').hide();
-        $('#' + elem).show();
-    }
+        function show(elem) {
+            $('.slider').hide();
+            $('#' + elem).show();
+        }
     </script>
 </body>
 
